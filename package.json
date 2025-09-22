@@ -1,0 +1,65 @@
+{
+  "name": "privacy-cargo-tracking-dapp",
+  "version": "1.0.0",
+  "description": "Privacy Cargo Tracking DApp with FHE encryption using FHEVM",
+  "main": "index.html",
+  "scripts": {
+    "compile": "cross-env npx hardhat compile",
+    "deploy": "cross-env npx hardhat run scripts/deploy.js --network sepolia",
+    "deploy:local": "cross-env npx hardhat run scripts/deploy.js --network localhost",
+    "test": "cross-env npx hardhat test",
+    "node": "cross-env npx hardhat node",
+    "verify": "cross-env npx hardhat verify --network sepolia",
+    "clean": "cross-env npx hardhat clean",
+    "typecheck": "tsc --noEmit",
+    "build": "cross-env npm run compile"
+  },
+  "keywords": [
+    "fhe",
+    "fhevm",
+    "privacy",
+    "cargo",
+    "tracking",
+    "ethereum",
+    "sepolia",
+    "dapp",
+    "blockchain"
+  ],
+  "author": "Privacy Cargo Tracking Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@fhevm/hardhat-plugin": "0.0.1-3",
+    "@fhevm/mock-utils": "^0.0.1-3",
+    "@fhevm/solidity": "^0.7.0",
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.8",
+    "@nomicfoundation/hardhat-ethers": "^3.0.8",
+    "@typechain/ethers-v6": "^0.5.1",
+    "@typechain/hardhat": "^9.1.0",
+    "@types/chai": "^4.3.11",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "^20.14.10",
+    "@zama-fhe/oracle-solidity": "^0.1.0",
+    "@zama-fhe/relayer-sdk": "^0.1.2",
+    "chai": "^4.3.10",
+    "cross-env": "^7.0.3",
+    "ethers": "^6.13.4",
+    "hardhat": "^2.24.3",
+    "ts-node": "^10.9.2",
+    "typechain": "^8.3.2",
+    "typescript": "^5.5.3"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.6"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/privacy-cargo-tracking-dapp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/privacy-cargo-tracking-dapp/issues"
+  },
+  "homepage": "https://github.com/your-username/privacy-cargo-tracking-dapp#readme"
+}
