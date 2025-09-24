@@ -1,0 +1,33 @@
+{
+  "name": "privacy-cargo-tracking-fhe",
+  "version": "1.0.0",
+  "description": "Privacy Cargo Tracking System powered by Fully Homomorphic Encryption",
+  "main": "index.html",
+  "type": "module",
+  "scripts": {
+    "start": "npx http-server . -p 3000 -c-1 --cors",
+    "dev": "npx http-server . -p 3000 -c-1 --cors",
+    "build": "echo 'Static HTML - no build required'",
+    "test": "echo 'No tests specified'"
+  },
+  "keywords": [
+    "fhevm",
+    "privacy",
+    "cargo-tracking",
+    "blockchain",
+    "ethereum",
+    "fully-homomorphic-encryption"
+  ],
+  "author": "Privacy Cargo Team",
+  "homepage": "https://privacy-cargo-tracking-fhe.vercel.app/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GaetanoHomenick/PrivacyCargoTracking_FHE.git"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
