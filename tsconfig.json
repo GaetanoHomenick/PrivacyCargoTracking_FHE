@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "commonjs",
+    "lib": ["es2020"],
+    "outDir": "./dist",
+    "rootDir": "./",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "typeRoots": [
+      "./node_modules/@types",
+      "./typechain"
+    ],
+    "paths": {
+      "@/*": ["./src/*"],
+      "@fhevm/*": ["./node_modules/@fhevm/*"]
+    }
+  },
+  "include": [
+    "./scripts/**/*",
+    "./test/**/*",
+    "./typechain/**/*",
+    "./hardhat.config.ts",
+    "./hardhat.config.js"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "artifacts",
+    "cache"
+  ],
+  "ts-node": {
+    "require": ["tsconfig-paths/register"]
+  }
+}
